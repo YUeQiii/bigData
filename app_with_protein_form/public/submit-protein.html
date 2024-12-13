@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+  <head>
+    <title>Submit Protein Structure</title>
+    <link type="text/css" rel="stylesheet" href="/elegant-aero.css" />
+  </head>
+  <!-- Thanks to Mario C. E. Freese <mcefreese@gmail.com> for permission to use background image -->
+  <body style='background-color: #f0f0f0;'>
+    <h2 class="elegant-aero" style="margin: 20px auto;">
+      Submit Protein Structure Update
+    </h2>
+    <form action="/update-protein.html" style="background:#FFFFFF;width:70%;margin:auto" method="get" class="elegant-aero">
+      <label>
+        <span>Protein ID:</span>
+        <input type="text" name="protein_id" required/>
+      </label>
+      <label>
+        <span>Atom ID:</span>
+        <input type="text" name="atom_id" required/>
+      </label>
+      <label>
+        <span>Atom Type:</span>
+        <input type="text" name="atom_type" required/>
+      </label>
+      <label>
+        <span>Residue:</span>
+        <input type="text" name="residue" required/>
+      </label>
+      <label>
+        <span>Chain:</span>
+        <input type="text" name="chain" required/>
+      </label>
+      <label>
+        <span>X Coordinate:</span>
+        <input type="number" step="0.001" name="x_coord" required/>
+      </label>
+      <label>
+        <span>Y Coordinate:</span>
+        <input type="number" step="0.001" name="y_coord" required/>
+      </label>
+      <label>
+        <span>Z Coordinate:</span>
+        <input type="number" step="0.001" name="z_coord" required/>
+      </label>
+      <label>
+        <span>B-factor:</span>
+        <input type="number" step="0.01" name="b_factor" required/>
+      </label>
+      <label>
+        <span>Occupancy:</span>
+        <input type="number" step="0.01" name="occupancy" required/>
+      </label>
+      <label>
+        <span>&nbsp;</span>
+        <input type="submit" value="Submit Update">
+      </label>
+    </form>
+  </body>
+</html>

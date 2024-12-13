@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+<head>
+    <title>Protein Structure Search</title>
+    <link type="text/css" rel="stylesheet" href="elegant-aero.css" />
+</head>
+<body>
+<h2 class="elegant-aero">Protein Structure Search</h2>
+<form action="/protein.html" method="get" target="results_iframe" class="elegant-aero">
+    <label>
+        <span>Protein ID:</span>
+        <input type="text" name="protein_id" placeholder="Enter Protein ID"/>
+    </label>
+    <label>
+        <input type="submit" value="Search">
+    </label>
+</form>
+<p style="margin-bottom:2cm"/>
+
+<iframe frameBorder="0" name="results_iframe" style="display:block;width:70%;height:600px;margin-left:auto;margin-right:auto"/>
+</body>
+</html>
